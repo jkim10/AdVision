@@ -1,0 +1,6 @@
+{
+  "tests/test_server.py::test_client_broadcast": true,
+  "tests/test_server.py::test_many_clients_connect": true,
+  "tests/test_server.py::test_single_client_connects": true,
+  "tests/test_server.py::test_some_broadcast_message": true
+}
