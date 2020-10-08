@@ -2,7 +2,7 @@
 # COMS4995
 
 # Let's Decide
-Real-time Physical Ad Analysis
+Decision Making App
 
 ## Motivation
 Decision making is really hard, even for one person. It's even worse for a pair, group, or crowd. So, Let's Decide is a group decision app that allows for blame free, guilt free decision making on things like food, activities, movies, etc. 
