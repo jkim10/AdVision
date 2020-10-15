@@ -33,8 +33,7 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       run: |
-        pytest -v --cov ./coverage.xml
-        codecov bd0f4b4c-4662-43e3-a07b-4fc6b8a3f479
+        pytest -v --cov=./ --cov-report=xml
     - name: Codecov
       uses: codecov/codecov-action@v1.0.13
       with:
