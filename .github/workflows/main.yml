@@ -21,6 +21,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - uses: codecov/codecov-action@v1
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v1
       with:
@@ -32,4 +33,17 @@ jobs:
         pip install -r requirements.txt
     - name: Run Tests
       run: |
-        pytest -v
+        pytest -v --cov ./coverage.xml
+        codecov bd0f4b4c-4662-43e3-a07b-4fc6b8a3f479
+    - name: Codecov
+      uses: codecov/codecov-action@v1.0.13
+      with:
+        # User defined upload name. Visible in Codecov UI
+        name: LetsDecideCov
+        # Repository upload token - get it from codecov.io. Required only for private repositories
+        token: ${{ secrets.CODECOV_TOKEN }}
+        # Path to coverage file to upload
+        file: ./coverage.xml
+    
+
+
