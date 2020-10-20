@@ -1,4 +1,4 @@
-from googleplaces import GooglePlaces, types, lang
+from googleplaces import GooglePlaces, types
 from serpapi import GoogleSearchResults
 
 YOUR_API_KEY = "AIzaSyDGgcdfAZod0ceOtHO_cO_-GAdd_8aSzW8"

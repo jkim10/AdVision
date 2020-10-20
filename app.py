@@ -29,6 +29,6 @@ def test_message(message):
     return message['data']
 
 
-# ======== Main ============================================================== #
+# ======== Main =========== #
 if __name__ == "__main__":
     socketio.run(app)
