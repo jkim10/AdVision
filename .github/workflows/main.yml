@@ -31,10 +31,14 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pytest-cov
+        pip install pylint *.py
         pip install -r requirements.txt
     - name: Run Tests
       run: |
         pytest -v --cov=./ --cov-report=xml
+    - name: Linting
+      run: |
+        pylint *.py
     - name: Codecov
       uses: codecov/codecov-action@v1.0.13
       with:
