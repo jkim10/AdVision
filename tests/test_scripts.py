@@ -1,7 +1,3 @@
-import os
-import pathlib
-import pytest
-
 from scripts.ranking import generateRanking
 
 

@@ -1,6 +1,4 @@
 import json
-import requests
-from app import socketio
 
 
 # TEST SERVER CREATION
