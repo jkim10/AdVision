@@ -16,12 +16,14 @@
 import sphinx_rtd_theme
 from recommonmark.transform import AutoStructify
 
+
 def setup(app):
     app.add_config_value('recommonmark_config', {
         'auto_toc_tree_section': 'Contents',
     }, True)
     app.add_transform(AutoStructify)
 # -- Project information -----------------------------------------------------
+
 
 project = 'Lets-Decide'
 copyright = '2020, Justin Kim'
@@ -36,8 +38,7 @@ release = '0.0.1'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['recommonmark'
-]
+extensions = ['recommonmark']
 source_suffix = ['.rst', '.md']
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
