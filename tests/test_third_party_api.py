@@ -1,2 +1,3 @@
-def yes:
+
+def yes():
     assert True == True
