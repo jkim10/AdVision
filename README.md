@@ -2,7 +2,7 @@
 ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/jkim10/let-s-Decide/CI/master?style=for-the-badge)
 [![codecov](https://codecov.io/gh/jkim10/Let-s-Decide/branch/master/graph/badge.svg?token=GFX47JYLF8)](undefined)
 
-
+Link to Personal Page: https://jkim10.github.io/
 [![Documentation Status](https://readthedocs.org/projects/let-s-decide/badge/?version=latest)](https://let-s-decide.readthedocs.io/en/latest/?badge=latest)
 # COMS4995
 # Paranoia
