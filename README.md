@@ -4,6 +4,9 @@
 
 
 [![Documentation Status](https://readthedocs.org/projects/let-s-decide/badge/?version=latest)](https://let-s-decide.readthedocs.io/en/latest/?badge=latest)
+
+Link to Personal Page: https://jkim10.github.io/
+
 # COMS4995
 # Let's Decide
 Decision Making App
