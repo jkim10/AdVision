@@ -1,13 +1,13 @@
 [
-  "tests/test_server.py::test_index",
-  "tests/test_server.py::test__socketIO",
-  "tests/test_server.py::test_single_client_connects",
-  "tests/test_server.py::test_many_clients_connect",
-  "tests/test_server.py::test_some_broadcast_message",
-  "tests/test_server.py::test__client_connect",
-  "tests/test_server.py::test_client_broadcast",
   "tests/test_scripts.py::test_ranking_1",
   "tests/test_scripts.py::test_ranking_1_output",
-  "tests/test_third_party_api.py::test_google_places_api",
-  "tests/test_third_party_api.py::test_google_image_api"
+  "tests/test_server.py::test__client_connect",
+  "tests/test_server.py::test__socketIO",
+  "tests/test_server.py::test_client_broadcast",
+  "tests/test_server.py::test_index",
+  "tests/test_server.py::test_many_clients_connect",
+  "tests/test_server.py::test_single_client_connects",
+  "tests/test_server.py::test_some_broadcast_message",
+  "tests/test_third_party_api.py::test_google_image_api",
+  "tests/test_third_party_api.py::test_google_places_api"
 ]
