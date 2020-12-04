@@ -22,7 +22,7 @@ class NavBar extends React.Component {
     return (
       <div className={classes.root}>
         <AppBar position="static">
-          <Box color="white" clone>
+          <Box color="textSecondary" clone>
             <Typography align="center" variant="h6" color="white" noWrap>
               Let's Decide
             </Typography>

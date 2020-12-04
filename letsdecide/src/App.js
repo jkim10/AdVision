@@ -29,7 +29,7 @@ class App extends Component {
     });
   }
   handleCreateRoom(event){
-    if(this.state.username == ""){
+    if(this.state.username === ""){
       alert("specify username")
     } else{
       event.preventDefault()
