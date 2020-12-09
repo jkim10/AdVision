@@ -21,8 +21,7 @@ const Lobby = (props) => {
   const [users] = useCollectionData(query);
   const suggestionsRef = db.collection("rooms").doc(props.room_code).collection("suggestions")
   const suggestionsQuery = suggestionsRef.limit(25);
-  const [suggestions] = useCollectionData(suggestionsQuery);
-  console.log(suggestions)
+  const [suggestions] = useCollectionData(suggestionsQuery,{idField: 'id'});
   useEffect(() => {
     const cleanup = () => {
       usersRef.doc(props.username).delete()
@@ -40,17 +39,22 @@ const Lobby = (props) => {
       }
   })
 
-  function vote(id){
-    console.log(id)
+  const handleClick = (suggestion) => {
+    suggestionsRef.doc(suggestion.id).update({
+      votes: firebase.firestore.FieldValue.increment(1)
+    })
   }
 
   return (
       <Box>
-        <Box>
+        Suggestions:
+        <Box display="flex" flexWrap="wrap" justifyContent="flex-start">
           {suggestions && suggestions.map(s=>
-                <Badge showZero badgeContent={s.votes} color="primary">
-                  <Chip onClick={vote(s.id)} label={s.title}/>
-                </Badge>
+                <Box key={s.id} display="inline" ml={1} mr={1} mb={3}>
+                  <Badge showZero badgeContent={s.votes} color="primary">
+                    <Chip onClick={() => {handleClick(s)}} label={s.title}/>
+                  </Badge>
+                </Box>
           )}
         </Box>
         <TableContainer component={Paper}>

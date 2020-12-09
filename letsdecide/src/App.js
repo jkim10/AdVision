@@ -17,6 +17,7 @@ class App extends Component {
       username: "",
       room_code: "",
       entered_room: false,
+      suggestion:''
     };
     this.handleChange = this.handleChange.bind(this)
     this.handleCreateRoom = this.handleCreateRoom.bind(this)
@@ -63,7 +64,7 @@ class App extends Component {
         title: this.state.suggestion,
         votes: 0
       })
-      console.log(ref)
+      this.setState({suggestion: ''})
    }
   }
 
@@ -74,16 +75,16 @@ class App extends Component {
           <NavBar />
           <Container id="login-view" align="center" fixed>
             <Box mb={1}>
-            <h3>Room Code: {this.state.room_code}</h3>
-            <form display="flex" onSubmit={this.handleAddSuggestion.bind(this)}>
-            <Box display="flex">
-                <TextField id="outlined-basic" onChange={this.handleChange} value={this.state.suggestion} name="suggestion" label="Add a Suggestion" variant="outlined" />
-                <Button type="submit" variant="outlined" size='large' color="primary">
-                  Submit
-                </Button>
+              <h3>Room Code: {this.state.room_code}</h3>
+              <form display="flex" align="center" onSubmit={this.handleAddSuggestion.bind(this)}>
+                <Box mt={3} justifyContent="center" display="flex">
+                    <TextField id="outlined-basic" onChange={this.handleChange} value={this.state.suggestion} name="suggestion" label="Add a Suggestion" variant="outlined" />
+                    <Button type="submit" variant="outlined" size='large' color="primary">
+                      Submit
+                    </Button>
+                </Box>
+              </form>
             </Box>
-            </form>
-          </Box>
             <Lobby username={this.state.username} room_code={this.state.room_code}/>
           </Container>
        </Box>
