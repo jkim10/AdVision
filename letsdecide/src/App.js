@@ -17,7 +17,8 @@ class App extends Component {
       username: "",
       room_code: "",
       entered_room: false,
-      suggestion:''
+      suggestion:'',
+      error: false
     };
     this.handleChange = this.handleChange.bind(this)
     this.handleCreateRoom = this.handleCreateRoom.bind(this)
@@ -32,7 +33,7 @@ class App extends Component {
 
   handleCreateRoom(event){
     if(this.state.username === ""){
-      alert("specify username")
+      this.setState({error:true})
     } else{
       event.preventDefault()
       const db = firebase.firestore();
@@ -44,7 +45,7 @@ class App extends Component {
   handleSubmit(event){
     event.preventDefault()
     if(this.state.username === ""){
-      alert("specify username")
+      this.setState({error:true})
     } else{
       event.preventDefault()
       const db = firebase.firestore();
@@ -104,7 +105,9 @@ class App extends Component {
                 align="center"
                 label="Username"
                 variant="filled"
+                error={this.state.error}
                 name="username"
+                data-testid="username" 
                 onChange={this.handleChange}
               />
               <Box mt={2}>
@@ -118,7 +121,7 @@ class App extends Component {
                 alignItems="flex-end"
               >
               
-                <Button variant="contained" style={{marginRight: '10px'}} onClick={this.handleCreateRoom} color="primary" disableElevation>
+                <Button data-testid="create" variant="contained" style={{marginRight: '10px'}} onClick={this.handleCreateRoom} color="primary" disableElevation>
                   Create
                 </Button>
                 <Typography display="inline" variant="h6" component="h6">
