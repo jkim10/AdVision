@@ -27,7 +27,7 @@ class App extends Component {
   handleChange(evt) {
     this.setState({
       ...this.state,
-      [evt.target.name]: evt.target.value,
+      [evt.target.name]: evt.target.value || '',
     });
   }
 
@@ -79,7 +79,7 @@ class App extends Component {
               <h3>Room Code: {this.state.room_code}</h3>
               <form display="flex" align="center" onSubmit={this.handleAddSuggestion.bind(this)}>
                 <Box mt={3} justifyContent="center" display="flex">
-                    <TextField id="outlined-basic" onChange={this.handleChange} value={this.state.suggestion} name="suggestion" label="Add a Suggestion" variant="outlined" />
+                    <TextField id="outlined-basic" onChange={(event)=> {this.handleChange(event)}} value={this.state.suggestion} name="suggestion" label="Add a Suggestion" variant="outlined" />
                     <Button type="submit" variant="outlined" size='large' color="primary">
                       Submit
                     </Button>
@@ -108,7 +108,7 @@ class App extends Component {
                 error={this.state.error}
                 name="username"
                 data-testid="username" 
-                onChange={this.handleChange}
+                onChange={(event)=> {this.handleChange(event)}}
               />
               <Box mt={2}>
                 <Typography mt={3} variant="h6" component="h6">
@@ -134,7 +134,7 @@ class App extends Component {
                     align="center"
                     label="Join"
                     name="room_code"
-                    onChange={this.handleChange}/>
+                    onChange={(event)=> {this.handleChange(event)}}/>
                 </form>
               </Box>
             </Box>
