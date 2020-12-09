@@ -7,9 +7,9 @@ test('Renders App and Page', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-test('Fill Form and Submit without username', () => {
-  render(<App />);
+// test('Fill Form and Submit without username', () => {
+//   render(<App />);
   
-  fireEvent.click(screen.getByTestId(/create/i))
-  expect(screen.getByText(/1. Choose Temporary Username/i)).toBeInTheDocument();
-});
+//   fireEvent.click(screen.getByTestId(/create/i))
+//   expect(screen.getByText(/1. Choose Temporary Username/i)).toBeInTheDocument();
+// });
