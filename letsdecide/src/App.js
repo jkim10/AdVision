@@ -105,13 +105,12 @@ class App extends Component {
               </Typography>
               <TextField
                 required
-                inputProps={{ style: { textAlign: 'center' } }}
+                inputProps={{ style: { textAlign: 'center' }, 'data-testid': 'username' }}
                 align='center'
                 label='Username'
                 variant='filled'
                 error={this.state.error}
                 name='username'
-                data-testid='username'
                 onChange={(event) => { this.handleChange(event) }}
               />
               <Box mt={2}>
@@ -131,10 +130,10 @@ class App extends Component {
                 <Typography display='inline' variant='h6' component='h6'>
                   or...
                 </Typography>
-                <form onSubmit={this.handleSubmit.bind(this)}>
+                <form data-testid='form' onSubmit={this.handleSubmit.bind(this)}>
                   <TextField
                     style={{ marginLeft: '10px' }}
-                    inputProps={{ style: { textAlign: 'center' } }}
+                    inputProps={{ style: { textAlign: 'center' }, 'data-testid': 'room_code' }}
                     align='center'
                     label='Join'
                     name='room_code'
