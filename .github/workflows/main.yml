@@ -38,6 +38,7 @@ jobs:
         npm test -- --watchAll=false --coverage
         
     - name: StandardJS lint checks
+      working-directory: ./letsdecide
       uses: goto-bus-stop/standard-action@v1.0.3
 
     - name: Codecov
