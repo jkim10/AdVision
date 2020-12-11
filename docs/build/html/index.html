@@ -35,7 +35,8 @@
 
     
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="App (component)" href="auto/App.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -80,14 +81,12 @@
               
             
             
-              <!-- Local TOC -->
-              <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Welcome to Lets Decide's documentation!</a><ul>
-<li><a class="reference internal" href="#first-header">First Header</a></li>
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="auto/App.html"><code class="docutils literal notranslate"><span class="pre">App</span></code> (component)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="auto/Lobby.html"><code class="docutils literal notranslate"><span class="pre">Lobby</span></code> (component)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="auto/Navbar.html"><code class="docutils literal notranslate"><span class="pre">Navbar</span></code> (component)</a></li>
 </ul>
-</li>
-</ul>
-</div>
+
             
           
         </div>
@@ -151,23 +150,59 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <p>.. Lets-Decide documentation master file, created by
-sphinx-quickstart on Wed Nov  4 02:44:14 2020.
-You can adapt this file completely to your liking, but it should at least
-contain the root <code class="docutils literal notranslate"><span class="pre">toctree</span></code> directive.</p>
-<div class="section" id="welcome-to-lets-decide-s-documentation">
+  <div class="section" id="welcome-to-lets-decide-s-documentation">
 <h1>Welcome to Lets Decide's documentation!<a class="headerlink" href="#welcome-to-lets-decide-s-documentation" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="first-header">
-<h2>First Header<a class="headerlink" href="#first-header" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>These</p></li>
-<li><p>are</p></li>
-<li><p>some</p></li>
-<li><p>bullets</p></li>
+</div>
+<div class="section" id="readme-file">
+<h1>Readme File<a class="headerlink" href="#readme-file" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://github.com/jkim10/Let-s-Decide/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/jkim10/Let-s-Decide?style=for-the-badge" /></a>
+<img alt="GitHub Workflow Status (branch)" src="https://img.shields.io/github/workflow/status/jkim10/let-s-Decide/CI/master?style=for-the-badge" />
+<a class="reference external" href="https://codecov.io/gh/jkim10/Let-s-Decide"><img alt="codecov" src="https://codecov.io/gh/jkim10/Let-s-Decide/branch/master/graph/badge.svg?token=GFX47JYLF8" /></a></p>
+<p><a class="reference external" href="https://let-s-decide.readthedocs.io/en/latest/?badge=latest"><img alt="Documentation Status" src="https://readthedocs.org/projects/let-s-decide/badge/?version=latest" /></a></p>
+<p>Link to Personal Page: https://jkim10.github.io/</p>
+<p>Link to Demo/Examples: https://let-s-decide-3750d.web.app/</p>
+</div>
+<div class="section" id="how-to-use-example">
+<h1>How to use Example<a class="headerlink" href="#how-to-use-example" title="Permalink to this headline">¶</a></h1>
+<ol class="simple">
+<li><p>Choose a username (can be your real one, or a fake one for anonymous)</p></li>
+<li><p>Press create</p></li>
+<li><p>Note room code at top</p></li>
+<li><p>Open a new browser session of the example, or open on a different device</p></li>
+<li><p>Add suggestions, and vote on suggestions by clicking on them. They should live update on both sessions/devices</p></li>
+</ol>
+</div>
+<div class="section" id="let-s-decide">
+<h1>Let's Decide<a class="headerlink" href="#let-s-decide" title="Permalink to this headline">¶</a></h1>
+<p>Decision Making App</p>
+<div class="section" id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h2>
+<p>Decision making is really hard, even for one person. It's even worse for a pair, group, or crowd. So, Let's Decide is a group decision app that allows for blame free, guilt free decision making on things like food, activities, movies, etc.</p>
+</div>
+<div class="section" id="objective">
+<h2>Objective<a class="headerlink" href="#objective" title="Permalink to this headline">¶</a></h2>
+<p>Create a app that allows people to create and join a room using a code &quot;Like Jackbox or Kahoot&quot; that brings up the list of suggestions.
+Then, the app gets the highest ranking mutual ranking and spits out the decision.</p>
+</div>
+<div class="section" id="run-tests">
+<h2>Run Tests<a class="headerlink" href="#run-tests" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">pytest</span> <span class="pre">-v</span></code></p>
+</div>
+<div class="section" id="api-autodoc">
+<h2>API AUTODOC<a class="headerlink" href="#api-autodoc" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="auto/App.html"><code class="docutils literal notranslate"><span class="pre">App</span></code> (component)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="auto/Lobby.html"><code class="docutils literal notranslate"><span class="pre">Lobby</span></code> (component)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="auto/Lobby.html#props">Props</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="auto/Lobby.html#room-code"><code class="docutils literal notranslate"><span class="pre">room_code</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="auto/Lobby.html#username"><code class="docutils literal notranslate"><span class="pre">username</span></code></a></li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>We can still mix rst, which we'll use for autodocumentation</p>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="auto/Navbar.html"><code class="docutils literal notranslate"><span class="pre">Navbar</span></code> (component)</a></li>
+</ul>
 </div>
 </div>
 </div>
@@ -177,6 +212,13 @@ contain the root <code class="docutils literal notranslate"><span class="pre">to
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="auto/App.html" class="btn btn-neutral float-right" title="App (component)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
   
 
   <hr/>

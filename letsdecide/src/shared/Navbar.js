@@ -4,6 +4,13 @@ import Box from '@material-ui/core/Box'
 
 import Typography from '@material-ui/core/Typography'
 
+/**
+ * Render the NavBar Component
+ * Header at the top of the app
+ * ```html
+ * <NavBar />
+ * ```
+ */
 class NavBar extends React.Component {
   render () {
     return (
@@ -11,7 +18,7 @@ class NavBar extends React.Component {
         <AppBar position='static'>
           <Box color='textSecondary' clone>
             <Typography align='center' variant='h6' style={{ color: 'white' }} noWrap>
-              Let's Decide
+              Lets Decide
             </Typography>
           </Box>
         </AppBar>
