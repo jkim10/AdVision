@@ -20,7 +20,7 @@ test('Test Lobby Component', () => {
 test('Test Navbar Component', () => {
   render(<NavBar />)
 
-  const linkElement = screen.getByText(/Let's Decide/i)
+  const linkElement = screen.getByText(/Lets Decide/i)
   expect(linkElement).toBeInTheDocument()
 })
 

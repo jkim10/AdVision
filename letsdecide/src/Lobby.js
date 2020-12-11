@@ -13,7 +13,27 @@ import Paper from '@material-ui/core/Paper'
 import Badge from '@material-ui/core/Badge'
 import Chip from '@material-ui/core/Chip'
 import PropTypes from 'prop-types'
+
+/**
+ * Render the Lobby Component
+ * Responsible for querying the database for active users in room and suggestions
+ *
+ * ```html
+ * <Lobby room_code=<> username=<> />
+ * ```
+ */
 const Lobby = (props) => {
+  Lobby.propTypes = {
+    /**
+     * room_code String representation of the room_code (id) in Firebase.
+     */
+    room_code: PropTypes.string,
+    /**
+     * username Username chosen by the user in session.
+     */
+    username: PropTypes.string
+
+  }
   const db = firebase.firestore()
   const usersRef = db.collection('rooms').doc(props.room_code).collection('users')
   const query = usersRef.limit(25)
@@ -71,9 +91,5 @@ const Lobby = (props) => {
     </Box>
   )
 }
-Lobby.propTypes = {
-  room_code: PropTypes.string,
-  username: PropTypes.string
 
-}
 export default Lobby

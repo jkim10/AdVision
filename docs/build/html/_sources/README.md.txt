@@ -8,13 +8,7 @@ Link to Personal Page: https://jkim10.github.io/
 
 Link to Demo/Examples: https://let-s-decide-3750d.web.app/
 
-# How to use Example
-1. Choose a username (can be your real one, or a fake one for anonymous)
-2. Press create
-3. Note room code at top
-4. Open a new browser session of the example, or open on a different device
-5. Add suggestions, and vote on suggestions by clicking on them. They should live update on both sessions/devices
-
+# COMS4995
 # Let's Decide
 Decision Making App
 

@@ -23,7 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "doc": "npx react-docgen src | ./buildDocs.sh && (cd ../docs/ && make html)"
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +45,8 @@
     ]
   },
   "devDependencies": {
+    "react-doc-generator": "^1.2.5",
+    "react-docgen": "^5.3.1",
     "standard": "*"
   },
   "standard": {
@@ -51,5 +54,4 @@
       "src/App.test.js"
     ]
   }
-  
 }
