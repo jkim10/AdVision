@@ -54,7 +54,5 @@ jobs:
         name: LetsDecideCov
         # Repository upload token - get it from codecov.io. Required only for private repositories
         token: ${{ secrets.CODECOV_TOKEN }}
-        # Path to coverage file to upload
-        file: ./coverage/clover.xml,./coverage/lcov.info
     
 
