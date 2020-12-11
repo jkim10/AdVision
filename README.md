@@ -26,4 +26,5 @@ Create a app that allows people to create and join a room using a code "Like Jac
 Then, the app gets the highest ranking mutual ranking and spits out the decision. 
 
 ## Run Tests
- `pytest -v`
+ `cd letdecide`
+ `npm test`

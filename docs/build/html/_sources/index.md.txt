@@ -1,15 +1,15 @@
 # Welcome to Lets Decide's documentation!
 Readme File
 ===========
-[![GitHub license](https://img.shields.io/github/license/jkim10/Let-s-Decide?style=for-the-badge)](https://github.com/jkim10/Let-s-Decide/blob/master/LICENSE)
-![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/jkim10/let-s-Decide/CI/master?style=for-the-badge)
-[![codecov](https://codecov.io/gh/jkim10/Let-s-Decide/branch/master/graph/badge.svg?token=GFX47JYLF8)](https://codecov.io/gh/jkim10/Let-s-Decide)
+[![](https://img.shields.io/github/license/jkim10/Let-s-Decide?style=for-the-badge)](https://github.com/jkim10/Let-s-Decide/blob/master/LICENSE)
+![](https://img.shields.io/github/workflow/status/jkim10/let-s-Decide/CI/master?style=for-the-badge)
+[![](https://codecov.io/gh/jkim10/Let-s-Decide/branch/master/graph/badge.svg?token=GFX47JYLF8)](https://codecov.io/gh/jkim10/Let-s-Decide)
 
 [![Documentation Status](https://readthedocs.org/projects/let-s-decide/badge/?version=latest)](https://let-s-decide.readthedocs.io/en/latest/?badge=latest)
 
-Link to Personal Page: https://jkim10.github.io/
+Link to Personal Page: [https://jkim10.github.io/](https://jkim10.github.io/)
 
-Link to Demo/Examples: https://let-s-decide-3750d.web.app/
+Link to Demo/Examples: [https://let-s-decide-3750d.web.app/](https://let-s-decide-3750d.web.app/)
 # How to use Example
 1. Choose a username (can be your real one, or a fake one for anonymous)
 2. Press create
@@ -28,7 +28,8 @@ Create a app that allows people to create and join a room using a code "Like Jac
 Then, the app gets the highest ranking mutual ranking and spits out the decision. 
 
 ## Run Tests
- `pytest -v`
+ `cd letdecide`
+ `npm test`
 
 ## API AUTODOC
 
