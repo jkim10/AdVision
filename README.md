@@ -1,7 +1,6 @@
 [![GitHub license](https://img.shields.io/github/license/jkim10/Let-s-Decide?style=for-the-badge)](https://github.com/jkim10/Let-s-Decide/blob/master/LICENSE)
 ![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/jkim10/let-s-Decide/CI/master?style=for-the-badge)
-[![codecov](https://codecov.io/gh/jkim10/Let-s-Decide/branch/master/graph/badge.svg?token=GFX47JYLF8)](undefined)
-
+[![codecov](https://codecov.io/gh/jkim10/Let-s-Decide/branch/master/graph/badge.svg?token=GFX47JYLF8)](https://codecov.io/gh/jkim10/Let-s-Decide)
 
 [![Documentation Status](https://readthedocs.org/projects/let-s-decide/badge/?version=latest)](https://let-s-decide.readthedocs.io/en/latest/?badge=latest)
 
