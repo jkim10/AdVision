@@ -1,6 +1,6 @@
 module.exports = {
-    mode: 'production',
-    optimization: {
-        sideEffects: false
-    },
-  };
+  mode: 'production',
+  optimization: {
+    sideEffects: false
+  }
+}
