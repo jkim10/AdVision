@@ -9,7 +9,10 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
+    
+defaults:
+  run:
+    working-directory: ./letsdecide
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
@@ -32,13 +35,11 @@ jobs:
       run: |
         npm install
     - name: Test + Coverage - Jest
-      working-directory: ./letsdecide
       run: |
         npm install
         npm test -- --watchAll=false --coverage
         
     - name: StandardJS lint checks
-      working-directory: ./letsdecide
       uses: goto-bus-stop/standard-action@v1.0.3
 
     - name: Codecov
@@ -49,6 +50,6 @@ jobs:
         # Repository upload token - get it from codecov.io. Required only for private repositories
         token: ${{ secrets.CODECOV_TOKEN }}
         # Path to coverage file to upload
-        file: ./letsdecide/coverage/clover.xml,./letsdecide/coverage/lcov.info
+        file: ./coverage/clover.xml,./coverage/lcov.info
     
 
