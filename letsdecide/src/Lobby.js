@@ -12,7 +12,7 @@ import TableRow from '@material-ui/core/TableRow'
 import Paper from '@material-ui/core/Paper'
 import Badge from '@material-ui/core/Badge'
 import Chip from '@material-ui/core/Chip'
-
+import PropTypes from 'prop-types'
 const Lobby = (props) => {
   const db = firebase.firestore()
   const usersRef = db.collection('rooms').doc(props.room_code).collection('users')
@@ -70,5 +70,10 @@ const Lobby = (props) => {
       </TableContainer>
     </Box>
   )
+}
+Lobby.propTypes = {
+  room_code: PropTypes.string,
+  username: PropTypes.string
+
 }
 export default Lobby
