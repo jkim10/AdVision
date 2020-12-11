@@ -40,7 +40,10 @@ jobs:
         npm test -- --watchAll=false --coverage
         
     - name: StandardJS lint checks
-      uses: goto-bus-stop/standard-action@v1.0.3
+      uses: goto-bus-stop/standard-action@v1
+      with:
+        files: src/*.js
+        annotate: true
 
     - name: Codecov
       uses: codecov/codecov-action@v1.0.13
