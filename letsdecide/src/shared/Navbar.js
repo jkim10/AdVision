@@ -3,7 +3,6 @@ import AppBar from '@material-ui/core/AppBar'
 import Box from '@material-ui/core/Box'
 
 import Typography from '@material-ui/core/Typography'
-import PropTypes from 'prop-types'
 
 class NavBar extends React.Component {
   render () {
